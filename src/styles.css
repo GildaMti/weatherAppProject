@@ -33,6 +33,14 @@ p {
 .col-4 {
   text-align: center;
 }
+a {
+  text-align: center;
+  font-weight: 700;
+
+  width: 65%;
+  margin-left: 570px;
+  margin-top: 30px;
+}
 .city {
   font-family: "Open Sans", sans-serif;
   font-size: 70px;
