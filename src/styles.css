@@ -1,0 +1,88 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #d4e8f7;
+  background-image: url("/src/clouds.jpg");
+}
+input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 20px;
+}
+input[type="submit"] {
+  width: 15%;
+  padding: 12px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #a7a1dd;
+  border: 2px solid black;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+p {
+  text-align: center;
+  font-weight: 700;
+
+  width: 65%;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.col-4 {
+  text-align: center;
+}
+.city {
+  font-family: "Open Sans", sans-serif;
+  font-size: 70px;
+  color: #456d75;
+}
+
+.temp {
+  font-size: 40px;
+  text-align: center;
+}
+.Farenhite,
+.celcius {
+  font-size: 30;
+  text-align: center;
+}
+.todayDate {
+  font-size: 20px;
+}
+.imoj {
+  font-size: 130px;
+  line-height: 40px;
+  margin-top: 50px;
+}
+.container {
+  width: 70%;
+  border: 3px solid #4e728a;
+  background: #d1e4f1;
+  color: black;
+  font-weight: 700;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.pridiction {
+  font-size: 15px;
+}
+
+.imoji {
+  font-size: 50px;
+  text-align: left;
+}
+.date {
+  font-size: 20px;
+  text-align: left;
+}
+.mintemp,
+.maxtemp {
+  font-size: 15px;
+  text-align: left;
+}
+#today-icon {
+  width: 200px;
+  padding: 32px;
+}
