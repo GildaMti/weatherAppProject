@@ -1,7 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #d4e8f7;
   background-image: url("/src/clouds.jpg");
+
+  background-color: #d4e8f7;
 }
 input[type="text"] {
   width: 60%;
@@ -14,8 +15,8 @@ input[type="submit"] {
   padding: 12px;
   margin: auto;
   border-radius: 20px;
-  background-color: #a7a1dd;
-  border: 2px solid black;
+  background-color: #e7e5f1;
+  border: 1px solid black;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
@@ -29,6 +30,9 @@ p {
   width: 65%;
   margin-left: 200px;
   margin-top: 30px;
+}
+small {
+  font-weight: 70000px;
 }
 .col-4 {
   text-align: center;
@@ -66,8 +70,8 @@ p {
 }
 .container {
   width: 70%;
-  border: 3px solid #4e728a;
-  background: #d1e4f1;
+  border: 3px solid #eef0f1;
+  background: #e8ecee;
   color: black;
   font-weight: 700;
   margin-top: 50px;

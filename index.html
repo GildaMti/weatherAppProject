@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>weather now!</title>
-		<meta charset="UTF-8" />
-		    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
@@ -14,100 +14,70 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="src/styles.css" />
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
-	
     <div class="container">
-				<div class="row">
-						<div class="col-4">
-							<div class="city" id="city2"> CityName</div>
-							<div class="todayDate" id="date-time">17:00 Fri 31Jul</div>
-							<div class="todayDate2" id="date-time2">17:00 Fri 31Jul</div>
-						</div>
-						<div class="col-4">
-						<br />
-						<img  src="img/temp.png" width="60px" />
-						<br />
-						<const class="temp" id="tempt"> 35 </const>
-							<a href="" class="celcius" id="celsius-link"> °C </a>
-							<a href="" class="Farenhite" id="fahrenheit-link"> | F</a>
-
-						</div>
-		<div class="col-4">
-				 <img
-				src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-				alt="Mostly Cloudy"
-				id="today-icon"
-			/> 
-				<div class ="pridiction">
-		
-			<ul>
-			<li   id="prec">	description: 1% </li>
-			<li id="Humid">			Humidity: 42% </li>
-		<li id="windy">				Wind: 8 km/h </li>
-			</ul>
-				</div>
-		</div>
-		
-					</div>
-			<hr />
       <div class="row">
-        <div class="col-sm">
-						<div class="imoji"> ☁️ </div>
-					<div class="date"> sat </div>
-					<span class=" mintemp"> 32 </span>
-				</span> - </span> 
-					<span class=" maxtemp"> 36 </span>
-				</div>
-        <div class="col-sm">
-						<div class="imoji"> ⛅ </div>
-						<div class="date"> sun </div>
-		
-				<span class=" mintemp"> 35 </span>
-			</span> - </span> 
-				<span class=" maxtemp"> 37 </span>
-			</div>
-        <div class="col-sm">
-						<div class="imoji"> ☀️ </div>
-						<div class="date"> mon </div>
-				<span class=" mintemp"> 35 </span>
-			</span> - </span> 
-				<span class=" maxtemp"> 38 </span>
-			</div>
-        <div class="col-sm">
-						<div class="imoji"> ☁️ </div>
-						<div class="date"> tue </div>
-						<span class=" mintemp"> 39 </span>
-					</span> - </span> 
-						<span class=" maxtemp"> 42 </span>
-				</div>
-        <div class="col-sm">
-						<div class="imoji">☀️ </div>
-						<div class="date">wed </div>
-									<span class=" mintemp"> 40 </span>
-				</span> - </span> 
-					<span class=" maxtemp"> 42 </span>
-				</div>
+        <div class="col-4">
+          <div class="city" id="city2">tehran</div>
+          <div class="todayDate" id="date-time">17:00 Fri 31Jul</div>
+          <div class="todayDate2" id="date-time2">17:00 Fri 31Jul</div>
+        </div>
+        <div class="col-4">
+          <br />
+          <img src="img/temp.png" width="60px" />
+          <br />
+          <const class="temp" id="tempt"> 35 </const>
+          <a href="" class="celcius" id="celsius-link"> °C </a>
+          <a href="" class="Farenhite" id="fahrenheit-link"> | F</a>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Mostly Cloudy"
+            id="today-icon"
+          />
+          <div class="pridiction">
+            <ul>
+              <li id="prec">description: 1%</li>
+              <li id="Humid">Humidity: 42%</li>
+              <li id="windy">Wind: 8 km/h</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <hr />
+      <div class="weather-forecast" id="forecast"></div>
       <form id="search-form">
-        <input type="text" placeholder="Enter a city"  id= "cityy" autocomplete="off">
-      
-			<input type="submit" value="Search" id= "searching" >
-			<input type="submit" value="current City" id= "currentingcity" >
-			</form>
+        <input
+          type="text"
+          placeholder="Enter a city to see its 7 days weather forecast"
+          id="cityy"
+          autocomplete="off"
+        />
+
+        <input type="submit" value="Search" id="searching" />
+        <input type="submit" value="current City" id="currentingcity" />
+      </form>
     </div>
 
-		<script src="src/index.js"></script>
-	
-		<p> Coded By Mozhdeh Matalebi</p>
-		<a  class="github href="https://github.com/GildaMti/weatherAppProject"> Open-source code </a>
+    <script src="src/index.js"></script>
+
+    <small>
+      <a class="github" href="https://github.com/GildaMti/weatherAppProject">
+        Open-source code
+      </a>
+      By Mozhdeh Matalebi
+    </small>
   </body>
 </html>
